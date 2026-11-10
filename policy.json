@@ -1,0 +1,31 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "openholidays",
+    "rateLimits": null,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": false,
+        "caching": {"permission": "unknown", "maxTtl": null},
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": true,
+            "text": "Holidays: OpenHolidays API (https://www.openholidaysapi.org), ODbL",
+            "url": "https://www.openholidaysapi.org",
+            "where": ["credits"]
+        },
+        "licence": "ODbL-1.0"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {"required": false, "pattern": null}
+    },
+    "provenance": {
+        "terms": "https://www.openholidaysapi.org/en/faq/",
+        "policy": "https://github.com/openpotato/openholidaysapi.data/blob/main/LICENSE",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": "https://github.com/openpotato/openholidaysapi/issues",
+        "notes": "Free of charge and allowed in commercial projects (the FAQ). The data is under the Open Database License 1.0: credit the source, and a database made from it is shared under the same licence; the server is AGPL-3.0 and can be self-hosted (base_uri). No rate limit, caching rule nor User-Agent rule is stated anywhere (rateLimits null: unknown); this package sends the site's User-Agent when one is given. validFrom and validTo may be at most three years apart (each call here asks for one calendar year). An unknown country is answered with an empty list. Regions are OpenHolidays' subdivision codes: ISO 3166-2 where the country has them (DE-BY), the API's own otherwise (FR-GE-BR, FR-GE-HR and FR-GE-MO for Alsace and Moselle, DE-BY-AU for the city of Augsburg). 36 countries; BR, SE and VA have public holidays only."
+    }
+}

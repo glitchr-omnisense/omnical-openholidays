@@ -1,0 +1,355 @@
+[
+ {
+  "id": "4109f291-07bf-4779-a855-d015dbece3bc",
+  "startDate": "2027-01-01",
+  "endDate": "2027-01-01",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Jour de l'an"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "d8f9f972-3caf-4fd5-aa6a-b619e778c566",
+  "startDate": "2027-03-26",
+  "endDate": "2027-03-26",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Vendredi saint"
+   }
+  ],
+  "regionalScope": "Local",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-GE-BR",
+    "shortName": "GE-BR"
+   },
+   {
+    "code": "FR-GE-HR",
+    "shortName": "GE-HR"
+   },
+   {
+    "code": "FR-GE-MO",
+    "shortName": "GE-MO"
+   }
+  ]
+ },
+ {
+  "id": "f3fb9fba-a333-41a7-bf71-df309993a333",
+  "startDate": "2027-03-29",
+  "endDate": "2027-03-29",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Lundi de Pâques"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "140006d4-f811-4ad2-ba3d-530e17815b87",
+  "startDate": "2027-04-27",
+  "endDate": "2027-04-27",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Abolition de l'esclavage"
+   }
+  ],
+  "regionalScope": "Regional",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-YT",
+    "shortName": "YT"
+   }
+  ]
+ },
+ {
+  "id": "1bd1f40b-17e4-4df0-97f3-508b1d2b92a6",
+  "startDate": "2027-05-01",
+  "endDate": "2027-05-01",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Fête du Travail"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "370651c6-9d98-4189-9417-1fae1c464a72",
+  "startDate": "2027-05-06",
+  "endDate": "2027-05-06",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Ascension"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "eb57f92b-dea4-44d0-ac76-990268c5bde1",
+  "startDate": "2027-05-08",
+  "endDate": "2027-05-08",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Victoire 1945"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "6f3c633e-8e73-4619-b3df-b70fa1ad5416",
+  "startDate": "2027-05-17",
+  "endDate": "2027-05-17",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Lundi de Pentecôte"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "3e4fcc06-4fba-4d49-89ee-7a1d20d436f7",
+  "startDate": "2027-05-22",
+  "endDate": "2027-05-22",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Abolition de l'esclavage"
+   }
+  ],
+  "regionalScope": "Regional",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-MQ",
+    "shortName": "MQ"
+   }
+  ]
+ },
+ {
+  "id": "a943066f-c954-439a-a9e1-8bb5c6307093",
+  "startDate": "2027-05-27",
+  "endDate": "2027-05-27",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Abolition de l'esclavage"
+   }
+  ],
+  "regionalScope": "Regional",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-MF",
+    "shortName": "MF"
+   },
+   {
+    "code": "FR-GP",
+    "shortName": "GP"
+   }
+  ]
+ },
+ {
+  "id": "2f24b4a0-ee13-45ec-b37b-09694ed35c28",
+  "startDate": "2027-06-10",
+  "endDate": "2027-06-10",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Abolition de l'esclavage"
+   }
+  ],
+  "regionalScope": "Regional",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-GY",
+    "shortName": "GY"
+   }
+  ]
+ },
+ {
+  "id": "5643849d-ead8-4345-9077-feb1098a394a",
+  "startDate": "2027-07-14",
+  "endDate": "2027-07-14",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Fête nationale"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "7072947e-7f66-466f-9f02-0e4314c2e377",
+  "startDate": "2027-08-15",
+  "endDate": "2027-08-15",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Assomption"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "d69ad69b-cc7a-4289-8e43-1fe003697e84",
+  "startDate": "2027-10-09",
+  "endDate": "2027-10-09",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Abolition de l'esclavage"
+   }
+  ],
+  "regionalScope": "Regional",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-BL",
+    "shortName": "BL"
+   }
+  ]
+ },
+ {
+  "id": "f467e27a-8a26-484e-831f-1d2b8ad71f08",
+  "startDate": "2027-11-01",
+  "endDate": "2027-11-01",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Toussaint"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "51ca6fa8-b5c5-4a62-86c0-6ec6c2da0299",
+  "startDate": "2027-11-11",
+  "endDate": "2027-11-11",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Armistice 1918"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "a778a8cc-a195-47e7-9d3a-634652eea6d8",
+  "startDate": "2027-12-20",
+  "endDate": "2027-12-20",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Abolition de l'esclavage"
+   }
+  ],
+  "regionalScope": "Regional",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-RU",
+    "shortName": "RU"
+   }
+  ]
+ },
+ {
+  "id": "08ab765c-f02f-48dc-9282-84accff9ec42",
+  "startDate": "2027-12-25",
+  "endDate": "2027-12-25",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "Noël"
+   }
+  ],
+  "regionalScope": "National",
+  "temporalScope": "FullDay",
+  "nationwide": true
+ },
+ {
+  "id": "a661b39c-1d18-4c53-a83b-92d099b03c0b",
+  "startDate": "2027-12-26",
+  "endDate": "2027-12-26",
+  "type": "Public",
+  "name": [
+   {
+    "language": "FR",
+    "text": "2ème jour de Noël"
+   }
+  ],
+  "regionalScope": "Local",
+  "temporalScope": "FullDay",
+  "nationwide": false,
+  "subdivisions": [
+   {
+    "code": "FR-GE-BR",
+    "shortName": "GE-BR"
+   },
+   {
+    "code": "FR-GE-HR",
+    "shortName": "GE-HR"
+   },
+   {
+    "code": "FR-GE-MO",
+    "shortName": "GE-MO"
+   }
+  ]
+ }
+]

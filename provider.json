@@ -1,0 +1,68 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/omnical/blob/1.x/resources/declarative-provider.schema.json",
+    "name": "openholidays",
+    "title": "OpenHolidays API",
+    "family": "omnical",
+    "capabilities": ["holidays"],
+    "baseUri": "https://openholidaysapi.org",
+    "auth": {"type": "none"},
+    "headers": {"Accept": "application/json"},
+    "describe": {
+        "countries": ["AD", "AL", "AT", "BE", "BG", "BR", "BY", "CH", "CZ", "DE", "EE", "ES", "FR", "HR", "HU", "IE", "IT", "LI", "LT", "LU", "LV", "MC", "MD", "MT", "MX", "NL", "PL", "PT", "RO", "RS", "SE", "SI", "SK", "SM", "VA", "ZA"],
+        "regions": true,
+        "types": ["public", "bank", "optional", "school", "observance"]
+    },
+    "endpoints": {
+        "holidays": [
+            {
+                "path": "/PublicHolidays",
+                "split": "year",
+                "tags": ["public", "bank", "optional", "observance"],
+                "query": {
+                    "countryIsoCode": "{country}",
+                    "languageIsoCode": "{language|upper}",
+                    "validFrom": "{from}",
+                    "validTo": "{to}",
+                    "subdivisionCode": "{region}"
+                },
+                "map": {
+                    "id": "/id",
+                    "date": "/startDate",
+                    "end": "/endDate",
+                    "name": ["/name[language={language}]/text", "/name/0/text"],
+                    "language": {"pointer": ["/name[language={language}]/language", "/name/0/language"], "transform": "lower"},
+                    "nationwide": "/nationwide",
+                    "regions": {"pointer": "/subdivisions", "each": "/code"},
+                    "types": {"pointer": "/type", "values": {"Public": "public", "Bank": "bank", "Optional": "optional", "School": "school", "BackToSchool": "observance", "EndOfLessons": "observance"}, "transform": "list"},
+                    "halfDay": {"pointer": "/temporalScope", "values": {"HalfDay": true, "FullDay": false}},
+                    "comment": ["/comment[language={language}]/text", "/comment/0/text"]
+                }
+            },
+            {
+                "path": "/SchoolHolidays",
+                "split": "year",
+                "tags": ["school"],
+                "query": {
+                    "countryIsoCode": "{country}",
+                    "languageIsoCode": "{language|upper}",
+                    "validFrom": "{from}",
+                    "validTo": "{to}",
+                    "subdivisionCode": "{region}"
+                },
+                "map": {
+                    "id": "/id",
+                    "date": "/startDate",
+                    "end": "/endDate",
+                    "name": ["/name[language={language}]/text", "/name/0/text"],
+                    "language": {"pointer": ["/name[language={language}]/language", "/name/0/language"], "transform": "lower"},
+                    "nationwide": "/nationwide",
+                    "regions": {"pointer": "/subdivisions", "each": "/code"},
+                    "types": {"pointer": "/type", "values": {"School": "school", "BackToSchool": "observance", "EndOfLessons": "observance"}, "transform": "list"},
+                    "halfDay": {"pointer": "/temporalScope", "values": {"HalfDay": true, "FullDay": false}},
+                    "comment": ["/comment[language={language}]/text", "/comment/0/text"]
+                }
+            }
+        ]
+    },
+    "policy": "policy.json"
+}

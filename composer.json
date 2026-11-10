@@ -1,12 +1,8 @@
 {
     "name": "omnical/openholidays",
     "type": "library",
-    "description": "Reserved, not released yet: OpenHolidays API for omnisense/omnical.",
-    "keywords": [
-        "omnical",
-        "openholidays",
-        "reserved"
-    ],
+    "description": "Omnical's OpenHolidays API, under any PHP host, with no key: the public and school holidays of 36 countries (most of Europe, Brazil, Mexico, South Africa) by region, in the country's languages, from open data (ODbL) - a provider declared as data (provider.json), loaded by omnisense/omnical's declarative mechanism with no class of its own, its usage policy beside it.",
+    "keywords": ["holidays", "public-holidays", "school-holidays", "openholidays", "open-data", "odbl", "declarative", "framework-agnostic", "omnical"],
     "homepage": "https://github.com/glitchr-omnisense/omnical-openholidays",
     "license": "MIT",
     "authors": [
@@ -16,14 +12,27 @@
         }
     ],
     "require": {
-        "php": ">=8.2"
+        "php": ">=8.2",
+        "omnisense/contracts": "^1.0@dev",
+        "omnisense/omnical": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
     },
-    "autoload": {
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload-dev": {
         "psr-4": {
-            "Omnical\\Openholidays\\": ""
+            "Omnical\\Openholidays\\Tests\\": "Tests/"
         }
     },
     "extra": {
+        "omnical": {
+            "provider": "provider.json"
+        },
+        "omnisense": {
+            "policy": "policy.json"
+        },
         "branch-alias": {
             "dev-1.x": "1.x-dev"
         }
